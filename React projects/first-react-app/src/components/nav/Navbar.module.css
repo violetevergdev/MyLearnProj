@@ -1,0 +1,26 @@
+/** @format */
+
+.headerSection {
+  padding: 33px 0;
+  border-bottom: 1px solid #828282;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.navElem {
+  font-family: "Gilroy-B";
+}
+
+.navLink {
+  color: #000;
+}
+.navLink:hover {
+  color: #828282;
+}
+@media (max-width: 576px) {
+  .headerSection {
+    display: none;
+  }
+}

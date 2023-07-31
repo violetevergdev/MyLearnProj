@@ -1,0 +1,118 @@
+/** @format */
+
+.burger {
+  position: relative;
+}
+
+.burger-button {
+  position: absolute;
+  z-index: 30;
+  top: -20px;
+  right: -0px;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-button span::before,
+.burger-button span::after,
+.burger-button span {
+  position: absolute;
+  width: 33px;
+  height: 3px;
+  background-color: #000;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.burger-button span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.burger-button span::before {
+  content: "";
+  top: -10px;
+}
+.burger-button span::after {
+  content: "";
+  top: 10px;
+}
+.burger-button.active1 span {
+  background-color: transparent;
+}
+.burger-button.active1 span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.burger-button.active1 span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+/*  */
+
+.burger-menu {
+  padding-top: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+  right: -150%;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+.burger-menu.active1 {
+  width: 100%;
+  right: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.burger-menu_link {
+  padding: 0 30px;
+  padding-bottom: 65px;
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.burger-list_link {
+  color: #828282;
+}
+.burger-list_link:hover,
+.burger-list_link:focus,
+.burger-list_link:active {
+  color: #000;
+}
+.ruEng {
+  text-transform: uppercase;
+  font-family: "Gilroy-B";
+  color: #828282;
+  font-size: 34px;
+  display: flex;
+  align-items: flex-end;
+  transform: rotate(90deg) translateY(-140px) translateX(170px);
+}
+.eng {
+  color: #000;
+}
+
+@media (min-width: 576px) {
+  .burger {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .burger {
+    display: block;
+  }
+}

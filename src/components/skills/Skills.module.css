@@ -1,0 +1,57 @@
+/** @format */
+.image {
+  padding-bottom: 25px;
+}
+
+.skill {
+  text-align: center;
+}
+.info {
+  color: #828282;
+}
+.discriptions {
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 80px;
+}
+.title {
+  font-family: "Gilroy-B";
+  font-size: 34px;
+  margin-bottom: 70px;
+  padding-top: 110px;
+}
+.stars {
+  padding-top: 40px;
+}
+.fullStar {
+  display: inline;
+}
+.fullStar:not(:last-child) {
+  padding-right: 10px;
+}
+.oneCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 110px;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .title {
+    padding-top: 80px;
+    margin-bottom: 50px;
+  }
+  .discriptions {
+    padding-bottom: 70px;
+  }
+  .oneCard {
+    padding-bottom: 95px;
+  }
+}

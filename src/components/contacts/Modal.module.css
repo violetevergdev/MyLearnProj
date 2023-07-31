@@ -1,0 +1,39 @@
+/** @format */
+
+.modalContainer {
+  background: #fff;
+  -webkit-box-shadow: 10px 9px 26px 9px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 10px 9px 26px 9px rgba(34, 60, 80, 0.2);
+  box-shadow: 10px 9px 26px 9px rgba(34, 60, 80, 0.2);
+  border-radius: 15px;
+  width: 85vw;
+  height: 30vh;
+  max-width: 500px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.title {
+  font-size: 30px;
+}
+.closeBtn span::before,
+.closeBtn span::after {
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+
+  right: 3%;
+}
+
+.closeBtn span::before {
+  content: "";
+  top: 9%;
+  transform: rotate(45deg);
+}
+.closeBtn span::after {
+  content: "";
+  top: 9%;
+  transform: rotate(-45deg);
+}
